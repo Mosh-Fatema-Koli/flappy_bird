@@ -31,12 +31,12 @@ class _MusicSettingsState extends State<MusicSettings> {
                 write("audio", true);
                 await player.resume();
               },
-                  child: Icon(Icons.music_note_rounded,size: 40,)),
+                  child: Icon(Icons.music_note_rounded,size: 25,)),
               GestureDetector(onTap: () async {
                 write("audio", false);
                 await player.pause();
               },
-                  child: Icon(Icons.music_off_rounded,size: 40)),
+                  child: Icon(Icons.music_off_rounded,size: 25)),
             ],
           ),
         ],

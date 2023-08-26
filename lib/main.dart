@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, unnecessary_import, unused_local_variable
 
 import 'package:flappy_bird/Routes/app_routes.dart';
+import 'package:flappy_bird/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
-      home: StartScreen(),
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
       initialRoute: Str.home,
       onGenerateRoute: AppRoute().generateRoute,

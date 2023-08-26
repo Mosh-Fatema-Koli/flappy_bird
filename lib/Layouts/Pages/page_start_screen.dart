@@ -33,7 +33,7 @@ class _StartScreenState extends State<StartScreen> {
         width: size.width,
         height: size.height,
         decoration: background(Str.image),
-        child: Column(
+        child: ListView(
           children: [
             // Flappy bird text
             Container(
@@ -54,6 +54,9 @@ Column _buttons(){
   return Column(
     children: [
       Button(buttonType: "text",height: 60,width: 278,icon: Icon(Icons.play_arrow_rounded,size: 60,color: Colors.green,),page: Str.gamePage,),
+      SizedBox(
+        height: 10,
+      ),
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

@@ -41,7 +41,7 @@ class _GamePageState extends State<GamePage> {
                   Barrier(barrierHeight[1][0], barrierWidth, barrierX[1], true),
                   Barrier(barrierHeight[1][1], barrierWidth, barrierX[1], false),
                   Positioned(
-                    bottom: 1, right: 1, left: 1,
+                    bottom: 50, right: 1, left: 1,
                     child: Container(child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -54,10 +54,7 @@ class _GamePageState extends State<GamePage> {
               ),
             ),
           ),
-          Expanded(
-            flex: 1,
-            child: Cover(),
-          ),
+
         ]),
       ),
     );
